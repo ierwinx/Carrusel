@@ -13,6 +13,7 @@
 		AAE5B1D32601197000F115F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAE5B1D12601197000F115F0 /* Main.storyboard */; };
 		AAE5B1D52601197000F115F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAE5B1D42601197000F115F0 /* Assets.xcassets */; };
 		AAE5B1D82601197000F115F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAE5B1D62601197000F115F0 /* LaunchScreen.storyboard */; };
+		AAE5B1EB2601423000F115F0 /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE5B1EA2601423000F115F0 /* iCarousel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		AAE5B1D42601197000F115F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AAE5B1D72601197000F115F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AAE5B1D92601197000F115F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAE5B1E82601422F00F115F0 /* Carrusel-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Carrusel-Bridging-Header.h"; sourceTree = "<group>"; };
+		AAE5B1E92601423000F115F0 /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
+		AAE5B1EA2601423000F115F0 /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 		AAE5B1CA2601197000F115F0 /* Carrusel */ = {
 			isa = PBXGroup;
 			children = (
+				AAE5B1EE2601428B00F115F0 /* iCarousel */,
+				AAE5B1E82601422F00F115F0 /* Carrusel-Bridging-Header.h */,
 				AAE5B1CB2601197000F115F0 /* AppDelegate.swift */,
 				AAE5B1CD2601197000F115F0 /* SceneDelegate.swift */,
 				AAE5B1CF2601197000F115F0 /* ViewController.swift */,
@@ -65,6 +71,15 @@
 				AAE5B1D92601197000F115F0 /* Info.plist */,
 			);
 			path = Carrusel;
+			sourceTree = "<group>";
+		};
+		AAE5B1EE2601428B00F115F0 /* iCarousel */ = {
+			isa = PBXGroup;
+			children = (
+				AAE5B1E92601423000F115F0 /* iCarousel.h */,
+				AAE5B1EA2601423000F115F0 /* iCarousel.m */,
+			);
+			path = iCarousel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -98,6 +113,7 @@
 				TargetAttributes = {
 					AAE5B1C72601197000F115F0 = {
 						CreatedOnToolsVersion = 12.3;
+						LastSwiftMigration = 1230;
 					};
 				};
 			};
@@ -138,6 +154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AAE5B1D02601197000F115F0 /* ViewController.swift in Sources */,
+				AAE5B1EB2601423000F115F0 /* iCarousel.m in Sources */,
 				AAE5B1CC2601197000F115F0 /* AppDelegate.swift in Sources */,
 				AAE5B1CE2601197000F115F0 /* SceneDelegate.swift in Sources */,
 			);
@@ -286,6 +303,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9TPTHP2V2G;
 				INFOPLIST_FILE = Carrusel/Info.plist;
@@ -295,6 +313,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.bugsoft.Carrusel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Carrusel/Carrusel-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -305,6 +325,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9TPTHP2V2G;
 				INFOPLIST_FILE = Carrusel/Info.plist;
@@ -314,6 +335,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.bugsoft.Carrusel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Carrusel/Carrusel-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
